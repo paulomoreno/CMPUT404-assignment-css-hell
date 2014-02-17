@@ -33,7 +33,7 @@ HTML Modification for Part I
 
 The only HTML modification done on the Gutenberg Project pages was the addition of the following line (in order to make my CSS work):
 
-"<link rel="stylesheet" type="text/css" href="style.css">"
+```<link rel="stylesheet" type="text/css" href="style.css">```
 
 
 
