@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	color: #333333;
+	font-size: 14pt;
+
+	padding-top: 20px;
+	animation: blink_bkg 1s step-end infinite;	
+}
+
+*{
+	margin:0;
+	padding:0;
+	font-family: Comic Sans, Comic Sans MS, cursive;
+	 text-shadow: 5px 5px 5px #FF0000;
+}
+
+@keyframes blink_orange_blue{
+	0% {background-color: orange}
+	50% {background-color: #babaff}
+}
+
+@keyframes blink_bkg{
+	0% {background-color: #3453ff }
+	25% {background-color: #ff54212 }
+	50% {background-color: #12ff13 }
+	75% {background-color: #ccffcf}
+}
+
+@keyframes blink_border{
+	0% {border-color: red}
+	50% {border-color: yellow}
+}
+
+@keyframes logo_move{
+	0% {padding-left:  0%;}
+	5% {padding-left:  5%;}
+	10% {padding-left:  10%;}
+	15% {padding-left:  15%;}
+	20% {padding-left:  20%;}
+	25% {padding-left:  25%;}
+	30% {padding-left:  30%;}
+	35% {padding-left:  45%;}
+	40% {padding-left:  50%;}
+	45% {padding-left:  65%;}
+	50% {padding-left:  75%;}
+	55% {padding-left:  65%;}
+	60% {padding-left:  50%;}
+	65% {padding-left:  45%;}
+	70% {padding-left:  30%;}
+	75% {padding-left:  25%;}
+	80% {padding-left:  20%;}
+	85% {padding-left:  15%;}
+	90% {padding-left:  10%;}
+	95% {padding-left:  5%;}
+}
+
+.center{
+	width: 60%;
+	height: 100%;
+	margin: auto;
+
+	background-color: yellow;
+	border: 10px dashed red;
+
+}
+
+.header{
+	width: 100%;
+	height: 140px;
+
+}
+
+.logo{
+	height: 60%;
+	width: 100%;
+
+	padding: 15px;
+	font-size: 34pt;
+	color: blue;
+
+	animation: logo_move 2s step-end infinite;
+
+}
+
+.logo_p{	
+	color: #8a8aaa;
+	font-size: 60pt;
+}
+
+
+.nav-menu{
+	width: 100%;
+	height: 40px;
+
+background: #fceabb; /* Old browsers */
+background: -moz-linear-gradient(top,  #fceabb 0%, #fccd4d 50%, #f8b500 51%, #fbdf93 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fceabb), color-stop(50%,#fccd4d), color-stop(51%,#f8b500), color-stop(100%,#fbdf93)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #fceabb 0%,#fccd4d 50%,#f8b500 51%,#fbdf93 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#fbdf93',GradientType=0 ); /* IE6-9 */
+
+}
+
+.nav_item{
+	float: left;
+	padding: 1%;
+	padding-right: 5%;
+	padding-left: 5%;
+
+}
+
+.nav_item a{
+	color: red;
+	font-size: 14pt;
+	text-decoration: none;
+}
+
+.nav_item a:hover{	
+	color: blue;
+	font-size: 14pt;
+	text-decoration: none;
+}
+
+.content{
+	width: 60%;
+	height: 500px;
+
+	float:left;
+
+}
+
+.c_title{
+	font-size: 28pt;
+
+	text-decoration:underline;
+	font-style: italic;
+	font-style: bold;
+}
+
+.c_topic{
+		animation: blink_orange_blue 1s step-end infinite;
+
+}
+
+p{
+	border: 2px dashed red;
+	margin:10px;
+	animation: blink_border 2s step-end infinite;
+
+}
+
+.img_me{
+	float: left;
+	margin-right: 5%;
+	border: 4px dotted red;
+	animation: blink_border 0.1s step-end infinite;
+
+}
+
+.sidebar{
+	width: 34%;
+	height: 450px;
+
+	margin: 3%;
+
+	float: right;
+
+	background-color: blue;
+	color: white;
+
+	background-image: url("img/vinicius-breakdance.gif");
+
+	background-attachment: fixed;
+
+	border-radius: 25px;
+
+}
+
+.s_title{
+	font-size: 18pt;
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+	text-decoration:underline;
+
+	font-style: italic;
+	font-style: bold;
+}
+
+.s_topic{
+	text-align: center;
+}
+
+.bottom{
+	width: 100%;
+	height: 40px;
+
+	clear:both;
+
+	text-align: center;
+
+	border-top: solid 1px #aaaaaa;
+
+	visibility: hidden;
+}
